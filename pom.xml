@@ -3,6 +3,9 @@
   <groupId>se-coveralls-ready</groupId>
   <artifactId>se-coveralls-ready</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <build>
     <testSourceDirectory>main/test/java</testSourceDirectory>
     <plugins>
@@ -31,13 +34,6 @@
             <id>prepare-agent</id>
             <goals>
               <goal>prepare-agent</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>report</id>
-            <phase>prepare-package</phase>
-            <goals>
-              <goal>report</goal>
             </goals>
           </execution>
         </executions>
