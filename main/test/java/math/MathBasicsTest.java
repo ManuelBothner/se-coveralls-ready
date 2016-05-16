@@ -68,6 +68,13 @@ public class MathBasicsTest {
 		pow = MathBasics.pow(2.0, 3);
 		Assert.assertEquals("The pow(double base, int exp) method of the MathBasics class has a failure", 8.0, pow, 0);
 		
+		pow = MathBasics.pow(2.0, 0);
+		Assert.assertEquals("The pow(double base, int exp) method of the MathBasics class has a failure", 1.0, pow, 0);
+		
+		pow = MathBasics.pow(2.0, -4);
+		double expected = (1.0/16.0);
+		Assert.assertEquals("The pow(double base, int exp) method of the MathBasics class has a failure", expected, pow, 0);
+		
 	}
 	
 	@Test
